@@ -34,7 +34,42 @@
       </a>
     </div>
     <div style="
+      display: grid;
+      
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      @media (min-width: 500px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+      }
+    ">
+      <div style="
+        border-radius: 16px;
+        border: 1px solid grey;
       ">
+        <h1>
+          Музыка
+        </h1>
+      </div>
+      <div style="
+        border-radius: 16px;
+        border: 1px solid grey;
+      ">
+        <h1>
+          Звуки
+        </h1>
+      </div>
+      <div style="
+        border-radius: 16px;
+        border: 1px solid grey;
+      ">
+        <h1>
+          Рекомендации
+        </h1>
+      </div>
     </div>
   </body>
 </html>
