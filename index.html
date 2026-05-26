@@ -52,16 +52,8 @@
     </div>
     <div style="
       display: grid;
-      
-      @media (max-width: 500px) {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      @media (min-width: 500px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 16px;
-      }
+      grid-template-columns: var(--columns);
+      grid-gap: var(--gap);
     ">
       <div style="
         border-radius: 16px;
