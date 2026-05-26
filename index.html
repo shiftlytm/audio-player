@@ -12,6 +12,21 @@
     <title>
       Аудио воспроизводитель
     </title>
+    <style>
+      @media (max-width: 500px) {
+        root:
+          --columns: 1fr;
+          --gap: 16px;
+        }
+      }
+
+      @media (min-width: 500px) {
+        root:
+          --columns: 1fr 1fr 1fr;
+          --gap: 16px;
+        }
+      }
+    </style>
   </head>
   <body style="
     background: #111111;
@@ -24,13 +39,15 @@
       height: auto;
     ">
     <div align="center">
-      <a href="https://shiftlytm.github.io/audio-player/subpage(s)/page-1.html" style="
-        background: #ffffff;
-        color: #111111;
-        border-radius: 100px;
-        padding: 16px;
-      ">
-        Войти в кабинет
+      <a href="https://shiftlytm.github.io/audio-player/subpage(s)/page-1.html">
+        <button style="
+          background: #ffffff;
+          color: #111111;
+          border-radius: 100px;
+          padding: 16px;
+        ">
+          Войти в кабинет
+        </button>
       </a>
     </div>
     <div style="
