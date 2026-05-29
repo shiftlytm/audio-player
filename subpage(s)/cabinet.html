@@ -1,1 +1,114 @@
-Ещё не готово
+<!DOCTYPE html>
+<html lang="ru"> 
+  <head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Аудио воспроизводитель">
+    <meta property="og:description" content="Бесплатный сайт с готовой музыкой, звуками">
+    <meta property="og:image" content="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>
+      Аудио воспроизводитель
+    </title>
+    <style>
+      :root {
+        --columns: 1fr;
+        --gap: 16px;
+      }
+
+      @media (min-width: 750px) {
+        :root {
+          --columns: 1fr 1fr 1fr;
+          --gap: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body style="
+    background: #111111;
+    color: #ffffff;
+    font-family: system-ui;
+    padding: 16px;
+    height: 100%;
+  ">
+    <div style="
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-radius: 16px;
+      border: 1px solid grey;
+      padding: 16px;
+      width: 1fr;
+    ">
+      <div style="
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        border: 1px solid grey;
+        padding: 16px;
+      ">
+        <h2>
+          АВ
+        </h2>
+      </div>
+      <div>
+        <h1 style="
+          text-align: center;
+        ">
+          Главная
+        </h1>
+      </div>
+      <div style="text-align: right;">
+        <a href="https://shiftlytm.github.io/audio-player">
+          <button style="
+            background: #ffffff;
+            color: #111111;
+            border-radius: 100px;
+            padding: 16px;
+            margin: 16px;
+          ">
+            Вернуться
+          </button>
+        </a>
+      </div>
+    <div style="
+      display: grid;
+      grid-template-columns: var(--columns);
+      gap: var(--gap);
+    ">
+      <div style="
+        border-radius: 16px;
+        background: #212121;
+        padding: 16px;
+      ">
+        <h1 style="
+          text-align: center;
+        ">
+          Песни
+        </h1>
+      </div>
+      <div style="
+        border-radius: 16px;
+        background: #212121;
+        padding: 16px;
+      ">
+        <h1 style="
+          text-align: center;
+        ">
+          Музыка
+        </h1>
+      </div>
+      <div style="
+        border-radius: 16px;
+        background: #212121;
+        padding: 16px;
+      ">
+        <h1 style="
+          text-align: center;
+        ">
+          Звуки
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
